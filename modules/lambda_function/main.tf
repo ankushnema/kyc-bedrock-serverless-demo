@@ -28,7 +28,7 @@ resource "aws_lambda_function" "kyc_doc_processor" {
   role          = aws_iam_role.lambda_exec.arn
   handler       = "lambda_function.lambda_handler"  # Adjust as per your actual handler (Python example)
   runtime       = "python3.12"                     # Or nodejs18.x, etc.
-  filename      = "lambda_package.zip"             # Path to deployment package (to be built)
+  filename      = "${path.root}/lambda_package.zip"  # Path to deployment package (to be built)
   timeout       = 60
   memory_size   = 256
 
