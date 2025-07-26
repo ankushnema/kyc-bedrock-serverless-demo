@@ -1,9 +1,3 @@
-# Variable for the DynamoDB table name, allowing unique names for each environment or use-case.
-variable "kyc_docs_table_name" {
-  description = "DynamoDB table name to store KYC document metadata and Bedrock AI summaries."
-  type        = string
-}
-
 # DynamoDB table for storing metadata and extracted AI insights from KYC document uploads.
 resource "aws_dynamodb_table" "kyc_docs" {
   name         = var.kyc_docs_table_name

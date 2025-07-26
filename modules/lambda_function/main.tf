@@ -1,27 +1,3 @@
-# Variable: Name for the Lambda function, helps differentiate environments or features.
-variable "kyc_doc_lambda_name" {
-  description = "Name of the Lambda function handling KYC document processing."
-  type        = string
-}
-
-# Variable: S3 bucket (by ARN) that triggers this Lambda function.
-variable "kyc_upload_bucket_arn" {
-  description = "ARN of the S3 bucket that triggers the Lambda on new KYC document uploads."
-  type        = string
-}
-
-# Variable: DynamoDB table (by ARN) where the Lambda writes processed results.
-variable "kyc_docs_table_arn" {
-  description = "ARN of the DynamoDB table to store processed KYC doc metadata and Bedrock summaries."
-  type        = string
-}
-
-# Variable: S3 bucket (by name) for Lambda environment variable/config.
-variable "kyc_upload_bucket_name" {
-  description = "Name of the S3 bucket (for use in Lambda env variables or config)."
-  type        = string
-}
-
 # Lambda function resource—actual code package to be provided later.
 resource "aws_lambda_function" "kyc_doc_processor" {
   function_name = var.kyc_doc_lambda_name

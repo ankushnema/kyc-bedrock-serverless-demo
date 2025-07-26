@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"kyc_doc_lambda","Source":"../../modules/lambda_function","Dir":"../../modules/lambda_function"},{"Key":"kyc_docs_table","Source":"../../modules/dynamodb_table","Dir":"../../modules/dynamodb_table"},{"Key":"kyc_upload_bucket","Source":"../../modules/s3_bucket","Dir":"../../modules/s3_bucket"}]}
