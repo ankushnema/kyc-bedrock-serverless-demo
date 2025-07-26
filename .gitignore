@@ -1,0 +1,28 @@
+# Terraform state files
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+terraform.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# IDE/editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Lambda deployment artifacts
+lambda_package.zip
+
+# OS/system files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# AWS credentials and config (never commit!)
+.aws/
